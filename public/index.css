@@ -216,3 +216,17 @@ input[type="text"]:valid + label {
   .urls-list td:first-child {
     font-weight: bold;
   }
+
+  .dancing-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    animation: dance 1s ease-in-out infinite;
+  }
+  
+  @keyframes dance {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
