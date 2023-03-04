@@ -42,7 +42,6 @@ form.addEventListener("submit", (e) => {
   clearFields();
 });
 
-// Update URL
 const updateUrl = async (shortId) => {
   const url = newUrlInput.value;
 

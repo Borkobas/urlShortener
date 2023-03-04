@@ -30,7 +30,6 @@ const validateURL = async (req, res, next) => {
   next();
 };
 
-// Get all URLs
 app.get('/urls', async (req, res) => {
   try {
     const urls = await URL.find({}, { _id: 0, __v: 0 });
@@ -41,7 +40,6 @@ app.get('/urls', async (req, res) => {
   }
 });
 
-// Update URL target
 app.put('/:id', async (req, res) => {
   const id = req.params.id;
   const { target } = req.body;
